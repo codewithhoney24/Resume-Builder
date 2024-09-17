@@ -1,0 +1,223 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fbfba0;
+  margin: 0;
+  padding: 50px;
+}
+
+.resume-container {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #067379a0;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section */
+.left-section {
+  color: white;
+  padding: 20px;
+  background-color: #1e484aa0;
+  width: 30%;
+  text-align: center;
+  border-right: 2px solid white; /* Thinner border */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes the skills section to the bottom */
+}
+
+
+
+* Parent container */
+.profile-container {
+  
+  padding-left: 40%px;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Full height of the viewport or parent */
+}
+
+/* Profile picture */
+.profile-picture {
+  
+margin-left: 15%;
+  margin-top: 20%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white; /* White border around the picture */
+}
+
+
+/* Career Objective and Certification Sections */
+#objective,
+#certification {  
+  margin-top: 30px;
+  border: 1px solid #ffffff80; /* Border around the sections */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  padding: 10px;
+  background-color: #0a575b; /* Background color for contrast */
+}
+
+#objective h3,
+#certification h3 {
+  margin-top: 0;
+  color: white;
+  padding: 10px;
+  border: 2px solid #ffffff80; /* Border around headings */
+  border-radius: 5px; /* Rounded corners for headings */
+  box-shadow: 0 0 10px rgba(147, 244, 239, 0.982); /* Softer shadow for headings */
+  background-color: #2b8388a0; /* Background color for headings */
+}
+
+#objective p,
+#certification ul {
+    align-items: center;
+    justify-content: center;
+    color: white;
+  padding: 10px;
+  font-size: 14px; /* Smaller font size */
+}
+
+/* Skills Section */
+#skills {
+  margin-top: auto; /* Pushes the skills section to the bottom of the left column */
+}
+
+#skills .skill {
+  margin-bottom: 20px;
+  border: 1px solid #ffffff80; /* Border around the skill elements */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  padding: 10px;
+}
+
+label {
+  font-size: 14px; /* Smaller font size */
+  display: block;
+  margin-bottom: 5px;
+}
+
+.progress-bar-container {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  width: 100%;
+  height: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.html-bar {
+  width: 95%;
+  background-color: rgb(227, 119, 48);
+}
+
+.css-bar {
+  width: 90%;
+  background-color: #c6a953;
+}
+
+.typescript-bar {
+  width: 85%;
+  background-color: #3178c6;
+}
+
+.nextjs-bar {
+  width: 95%;
+  background-color: rgb(153, 219, 54);
+}
+
+.git-bar {
+  width: 80%;
+  background-color: #f032a7;
+}
+
+.percentage {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Right Section */
+.right-section {
+  padding: 20px;
+  width: 65%;
+  color: white; /* Makes all the text white */
+  border: 2px solid #ffffff80; /* Thinner border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  background-color: #1a7378; /* Background color for contrast */
+  border-radius: 10px; /* Rounded corners for a smoother look */
+}
+
+.right-section h1,
+.right-section h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.right-section h3 {
+  padding: 2%;
+  border-radius: 5px; /* Adjusted border radius */
+  box-shadow: 0 0 10px rgba(147, 244, 239, 0.982); /* Softer shadow */
+  color: white;
+}
+
+.right-section p,
+.right-section ul {
+  font-size: 14px; /* Smaller font size */
+  border: 1px solid #ffffff80; /* Border around text elements */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  padding: 10px;
+}
+
+/* Toggle Button */
+button {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #094043;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #055a61;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .resume-container {
+    flex-direction: column;
+    width: 95%;
+    padding: 10px;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    padding: 10px;
+    border-right: none;
+  }
+
+  .left-section {
+    border-bottom: 2px solid white; /* Thinner border for mobile view */
+  }
+  .profile-picture{
+  margin-right: 20%;
+
+}
+}
